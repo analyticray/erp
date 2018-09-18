@@ -4,6 +4,7 @@
     'author': 'AnalytiCray',
 	'price': '99',
 	'currency': 'EUR',
+	'license': 'Other proprietary',
 'category': 'Payment',
     'description': """
 Payment gateway integration of iPay88.
