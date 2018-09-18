@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <template id="ipay88_acquirer_button">
+            <FORM method="post" name="ePayment" t-att-action="tx_url">
+                <INPUT type="hidden" name="MerchantCode" t-att-value="MerchantCode"/>
+                <INPUT type="hidden" name="RefNo"
+                       t-att-value="refno"/>
+                <INPUT type="hidden" name="Amount"
+                       t-att-value="amount"/>
+                <INPUT type="hidden" name="Currency"
+                       t-att-value="currency"/>
+                <INPUT type="hidden" name="ProdDesc"
+                       t-att-value="prod_desc"/>
+                <INPUT type="hidden" name="UserName"
+                       t-att-value="user_name"/>
+                <INPUT type="hidden" name="UserEmail"
+                       t-att-value="email"/>
+                <INPUT type="hidden" name="SignatureType" value="SHA256"/>
+                <INPUT type="hidden" name="Signature"
+                       t-att-value="signature"/>
+                <INPUT type="hidden" name="ResponseURL"
+                       t-att-value="ResponseURL"/>
+                <INPUT type="hidden" name="BackendURL"
+                       t-att-value="BackendURL"/>
+                <button type="submit" width="100px" t-att-class="submit_class">
+                    <img t-if="not submit_txt" src="/payment_iPay88/static/src/img/iPay88-logo.png"/>
+                    <span t-if="submit_txt">
+                        <t t-esc="submit_txt"/>
+                        <span class="fa fa-long-arrow-right"/>
+                    </span>
+                </button>
+            </FORM>
+        </template>
+
+    </data>
+</odoo>
+            
