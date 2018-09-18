@@ -2,7 +2,7 @@
     'name': 'iPay88 Malaysian Payment Gateway',
     'summary': 'Payment gateway integration of iPay88',
     'author': 'AnalytiCray',
-	'price': '99',
+	'price': '90',
 	'currency': 'EUR',
 	'license': 'Other proprietary',
 'category': 'Payment',
