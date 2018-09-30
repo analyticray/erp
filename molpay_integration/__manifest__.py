@@ -18,7 +18,7 @@ Payment gateway integration of MolPay.
 #      'demo': [
 #         'data/payment_acquirer_data.xml',
 #     ],
-
+    'images': ['static/description/banner.png'],
     'installable': True,
 
 }
