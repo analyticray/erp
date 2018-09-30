@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		
+		<record id="acquirer_form_molpay" model="ir.ui.view">
+			<field name="name">acquirer.form.molpay</field>
+			<field name="model">payment.acquirer</field>
+			<field name="inherit_id" ref="payment.acquirer_form"/>
+			<field name="arch" type="xml">
+				<xpath expr='//group[@name="acquirer"]' position='after'>
+					<group attrs="{'invisible': [('provider', '!=', 'molpay')]}">
+						<field name="molpay_merchant_id"/>
+						<!--field name="molpay_email_account"/>
+						<field name="molpay_password" password="True"/-->
+						
+						<!--						<field name="molpay_production_url"/-->
+						<field name="molpay_verify_key"/>
+						
+						<a colspan="2" href="https://molpay.com/v3/sign-up" target="_blank">Login Into
+							MolPay</a>
+					</group>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>
+                	

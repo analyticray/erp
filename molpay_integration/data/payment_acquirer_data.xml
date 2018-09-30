@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		
+		<record id="payment.payment_acquirer_molpay" model="payment.acquirer">
+			<field name="name">MolPay</field>
+			<field name="image" type="base64" file="molpay_integration/static/src/img/molpay-logo.png"
+				/>
+			<field name="provider">molpay</field>
+			<field name="company_id" ref="base.main_company" />
+			<field name="view_template_id" ref="molpay_acquirer_button" />
+			<field name="environment">test</field>
+			<field name="pre_msg">
+				<![CDATA[ <p>You will be redirected to the molpay website after clicking on the payment
+				button.</p>]]>
+			</field>
+			<field name="molpay_email_account">dummy</field>
+			<field name="molpay_merchant_id">dummy</field>
+			<field name="molpay_password">dummy</field>
+			<field name="molpay_verify_key">dummy</field>
+			
+		</record>
+	</data>
+</odoo>
