@@ -1,5 +1,5 @@
 {
-    'name': 'MolPay Payment Gateway Integration',
+    'name': 'MOLPay Payment Gateway Integration',
     'summary': 'Payment gateway integration of MOLPay',
     'author': 'AnalytiCray',
 	'price': '90',
