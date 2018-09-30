@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		
+		<template id="molpay_acquirer_button">
+			<form t-if="acquirer.molpay_email_account" t-att-action="tx_url" method="post" target="_self">
+				<input type="hidden" name="vcode" t-att-value="vcode"/>
+				<input type="hidden" name="merchant_id" t-att-value="merchant_id"/>
+				<input type="hidden" name="amount" t-att-value="amount"/>
+				<input type="hidden" name="currency" t-att-value="cur"/>
+				<input type="hidden" name="orderid" t-att-value="orderid"/>
+				<input type="hidden" name="bill_email" t-att-value="bill_email"/>
+				<input type="hidden" name="bill_name" t-att-value="bill_name"/>
+				<input type="hidden" name="bill_mobile" t-att-value="bill_mobile"/>
+				<input type="hidden" name="bill_desc" t-att-value="bill_desc"/>
+				<input type="hidden" name="channel" t-att-value="channel"/>
+				<input type="hidden" name="country" t-att-value="country" />
+				<input type="hidden" name="returnurl" t-att-value="returnurl"/>
+				<input type="hidden" name="callbackurl" t-att-value="callbackurl"/>
+				<input type="hidden" name="langcode" t-att-value="langcode"/>
+				<button type="submit" width="100px" t-att-class="submit_class">
+					<img t-if="not submit_txt" src="/molpay_integration/static/src/img/molpay-logo.png"/>
+					<span t-if="submit_txt">
+						<t t-esc="submit_txt"/>
+						<span class="fa fa-long-arrow-right"/>
+					</span>
+				</button>
+			</form>
+		</template>
+		
+	</data>
+</odoo>
+            
