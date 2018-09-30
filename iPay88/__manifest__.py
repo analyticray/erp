@@ -9,7 +9,7 @@
     'description': """
 Payment gateway integration of iPay88.
 """,
-    'website': '',
+    'website': 'https://analyticray.com',
     'depends': ['payment','website_sale'],
     'data': [
 	        'view/ipay88.xml',
