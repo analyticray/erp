@@ -15,7 +15,7 @@ Payment gateway integration of iPay88.
 	        'view/ipay88.xml',
             'view/ipay88_template.xml',
             'data/payment_acquirer_data.xml'],
-
+    'images': ['static/description/banner.png'],
     'installable': True,
 
 }
