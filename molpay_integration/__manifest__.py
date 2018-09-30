@@ -8,7 +8,7 @@
     'description': """
 Payment gateway integration of MolPay.
 """,
-    'website': 'https://www.techloyce.com.my',
+    'website': 'https://analyticray.com',
     'depends': ['payment','website_sale'],
 #     'images': ['static/description/img1.png'],
     'data': [
